@@ -44,7 +44,7 @@ export function isDirector(employee: TeacherInterface | DirectorInterface): empl
     return (employee as Director).workDirectorTasks !== undefined;
   }
 
-  export function executeWork(employee: DirectorInterface | TeacherInterface): string {
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
     let request;
     if (isDirector(employee)) {
         request = employee.workDirectorTasks();
@@ -52,4 +52,14 @@ export function isDirector(employee: TeacherInterface | DirectorInterface): empl
         request = employee.workTeacherTasks();
       }
     return request;
+  }
+
+type Subjects = "Math" | "History";
+export function teachClass(todayClass:Subjects): string {
+    if (todayClass === 'Math') {
+    return 'Teaching Math';
+    }
+    if (todayClass === 'History'){ 
+    return 'Teaching History';
+    }
   }
