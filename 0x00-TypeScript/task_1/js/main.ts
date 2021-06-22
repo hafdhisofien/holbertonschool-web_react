@@ -29,3 +29,14 @@ interface Teacher {
     numberOfReports: 17,
   };
   console.log(director1);
+
+  export const printTeacher: printTeacherFunction = function (
+    firstName: string,
+    lastName: string
+  ): string {
+    return `${firstName.charAt(0)}. ${lastName}`;
+  };
+
+  interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+  }
