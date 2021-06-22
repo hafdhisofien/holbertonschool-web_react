@@ -50,7 +50,8 @@ interface Teacher {
     displayName(): string;
   }
 
-  export class StudentClass implements StudentClassInterface {
+  export const StudentClass: StudentConstructor =
+  class StudentClass implements StudentClassInterface {
   firstName: string;
   lastName: string;
 
