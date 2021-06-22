@@ -28,7 +28,7 @@ interface Teacher {
     fullTimeEmployee: true,
     numberOfReports: 17,
   };
-  console.log(director1);
+  //console.log(director1);
 
   export const printTeacher: printTeacherFunction = function (
     firstName: string,
@@ -59,11 +59,11 @@ interface Teacher {
     this.lastName = lastName;
   }
 
-  workOnHomework() {
+  workOnHomework(): string {
     return "Currently working";
   }
 
-  displayName() {
+  displayName(): string {
     return this.firstName;
   }
 }
