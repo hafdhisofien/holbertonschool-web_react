@@ -27,7 +27,7 @@ module.exports = {
     compress: true,
     port: 8564,
   },
-  plugins: [new CleanWebpackPlugin(), new HtmlWebpackPlugin({filename: 'index.html'})],
+  plugins: [new CleanWebpackPlugin(), new HtmlWebpackPlugin({filename: './public/index.html'})],
   devtool: 'inline-source-map',
   module: {
     rules: [
