@@ -10,3 +10,10 @@
     font-size: 25px;
     text-align: initial;
 }
+
+ul li[data-priority='urgent'] {
+  color: red;
+}
+ul li[data-priority='default'] {
+  color: blue;
+}
