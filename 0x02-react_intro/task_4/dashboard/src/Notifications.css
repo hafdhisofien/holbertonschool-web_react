@@ -1,0 +1,19 @@
+:root {
+    --color--primary: #E10034;
+  }
+
+.Notifications {
+	border: 4px dotted var(--color--primary);
+	padding: 2rem;
+}
+.Notifications > p {
+    font-size: 25px;
+    text-align: initial;
+}
+
+ul li[data-priority='urgent'] {
+  color: red;
+}
+ul li[data-priority='default'] {
+  color: blue;
+}
