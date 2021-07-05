@@ -1,0 +1,15 @@
+:root {
+    --color--primary: #E10034;
+  }
+
+.App-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid var(--color--primary);
+    font-size: 27px;
+  }
+  
+.App-footer p {
+    margin-left: 40%;
+  }

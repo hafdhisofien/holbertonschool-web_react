@@ -1,0 +1,11 @@
+:root {
+    --color--primary: #E10034;
+  }
+
+  .App-body > p {
+    margin-left: 10%;
+    margin-top: 10%;
+    float: left;
+    font-size: 25px;
+    font-family: sans-serif;
+  }

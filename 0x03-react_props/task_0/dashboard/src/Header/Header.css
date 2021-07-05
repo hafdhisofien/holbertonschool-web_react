@@ -1,0 +1,17 @@
+:root {
+    --color--primary: #E10034;
+  }
+  
+  .App-header {
+    display: flex;
+    font-size: 23px;
+    border: 5px solid var(--color--primary);
+    font-family: sans-serif;
+    color: var(--color--primary);
+  }
+  .App-header h1 {
+    margin: 6%;
+  }
+  .App-header img {
+    width: 15%;
+  }
